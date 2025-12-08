@@ -14,3 +14,6 @@ ENV/
 # IDE
 .vscode/
 .idea/
+
+# Backup
+/Docs
