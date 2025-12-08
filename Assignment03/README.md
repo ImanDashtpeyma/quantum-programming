@@ -1,16 +1,8 @@
-# Assignment 03 - Complete Implementation
+# Assignment 03 - Problem Set III - QPROG
 
 **Students:** Jady Pâmella Barbacena da Silva and Navyashree Suryanarayana Rao Prasanna  
 **Course:** QPROG - Quantum Programming  
 **Date:** December 8, 2025
-
----
-
-## ✅ Status: ALL TASKS COMPLETED
-
-All 8 tasks from Problem Set III have been implemented correctly according to the PDF specifications.
-
-**Total Points: 12/12 (10 base + 2 bonus)**
 
 ---
 
@@ -55,20 +47,6 @@ OR, XOR, and NAND gates implemented in all methods.
 
 - `question1_qft.ipynb` - Question 1 implementations and tests
 - `question2_classical_to_quantum.ipynb` - Question 2 implementations and tests
-- `complete_implementations.py` - All functions in standalone Python file
-- `test_all_implementations.py` - Comprehensive test suite
-
----
-
-## How to Test
-
-Run all cells in the notebooks, or use the test script:
-
-```bash
-python test_all_implementations.py
-```
-
-All tests pass successfully!
 
 ---
 
@@ -87,7 +65,3 @@ All tests pass successfully!
 - Output preservation through ancilla duplication
 - Uncompute cleans up internal qubits only
 - Controlled versions use multi-controlled gates
-
----
-
-**All implementations tested and working correctly!**
