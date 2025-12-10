@@ -57,7 +57,6 @@ OR, XOR, and NAND gates implemented in all methods.
 - Phase angles: π/2^k
 - SWAP gates to reverse qubit order
 - Inverse QFT: reverse order, negative phases
-- Verified: QFT × IQFT = Identity
 
 ### Question 2
 - Converts AND, OR, XOR, NOT, NAND gates
