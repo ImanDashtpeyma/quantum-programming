@@ -1,0 +1,25 @@
+
+Projects In Quantum Computing
+Completion requirements
+Opened: Tuesday, 16 December 2025, 06:00
+Due: Sunday, 18 January 2026, 23:59
+Your project should be delivered as a single zip file containing three folders: 
+
+Documentation: This folder should contain a PDF with a report describing your project, relevant implementation details and an experimental evaluation of your implementation. 
+Implementation: This folder should contain your code and other files related to your implementation. 
+Experiments: This folder should contain the datasets and auxiliary scripts used for the experimental evaluation. This folder should also contain the experimental results themselves, such as tables, plots, etc. 
+There are two guided projects, and one category of non-guided projects.
+
+Guided Projects
+
+Implementation of Modular Exponentiation. From scratch. 
+Using Grover's algorithm to find solutions to the Dominating Set problem
+Each of the two guided projects is split into a sequence of well defined steps. Each will require a good domain of the material covered up to Assignment 3. You should be especially comfortable with implementing a quantum circuit for the unitary U_F of a given boolean function F. For the second project you should get familiar with the content of Lecture 05 and with the code discussed in the lecture.
+
+Non-Guided Projects 
+
+There is a single category of non-guided projects: modeling combinatorial problems as QUBOs (Quadratic Unconstrained Binary Optimization) and solving them on quantum computers/simulators. These projects are ideal for students who wish to delve deeper into optimization topics rather than exploring quantum circuit design. Please be aware that undertaking a non-guided project may require a significant amount of research before you can begin working on it.
+
+GuidedProject-DominatingSet.pdf GuidedProject-DominatingSet.pdf16 December 2025, 02:41
+GuidedProject-ModularExponentiation.pdf GuidedProject-ModularExponentiation.pdf16 December 2025, 02:41
+NonGuidedProject-QUBO.pdf NonGuidedProject-QUBO.pdf16 December 2025, 02:41
