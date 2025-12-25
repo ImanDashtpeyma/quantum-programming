@@ -1,0 +1,70 @@
+# Theoretical Analysis: 16-Vertex Grid Graph
+# Date: December 2025
+# Students: Jady Pâmella Barbacena da Silva & Iman Dashtpeyma
+
+## Graph Description
+- Type: 4×4 Grid graph
+- Vertices: 16 (labeled 0-15)
+- Edges: 24 (grid connections)
+- Structure: Each interior vertex has 4 neighbors, corner vertices have 2, edge vertices have 3
+
+## Resource Analysis for k=2
+
+### Qubit Requirements
+- Bits per vertex: ⌈log₂(16)⌉ = 4
+- Input qubits: 2 × 4 = 8
+- Auxiliary qubits: 34
+  - B register: 4 qubits
+  - Dominated AUX: 8 qubits
+  - AllDominated results: 16 qubits
+  - AllDistinct AUX: 5 qubits
+  - Distinct result: 1 qubit
+- Output qubit: 1
+- TOTAL: 43 qubits
+
+### Search Space
+- Size: 16² = 256 states
+- Optimal Grover iterations: π/4 × √256 ≈ 13 iterations
+
+### Quantum Speedup
+- Classical complexity: O(256) vertex checks
+- Quantum complexity: O(√256) = O(16) iterations
+- Speedup factor: 16×
+
+## Resource Analysis for k=4
+
+### Qubit Requirements
+- Input qubits: 4 × 4 = 16
+- Auxiliary qubits: 41
+- Output qubit: 1
+- TOTAL: 58 qubits
+
+### Search Space
+- Size: 16⁴ = 65,536 states
+- Optimal Grover iterations: π/4 × √65,536 ≈ 201 iterations
+
+### Quantum Speedup
+- Classical complexity: O(65,536) vertex checks
+- Quantum complexity: O(√65,536) = O(256) iterations
+- Speedup factor: 256×
+
+## Simulation Feasibility
+
+| Configuration | Total Qubits | Classical Memory | Feasibility |
+|--------------|--------------|-----------------|-------------|
+| k=2          | 43           | ~70 TB          | HPC only    |
+| k=4          | 58           | ~2 EB           | Impossible  |
+
+## Conclusions
+
+1. The algorithm is theoretically correct and scales appropriately
+2. Classical simulation is infeasible beyond ~30 qubits
+3. Real quantum hardware would be required for practical evaluation
+4. The quadratic speedup becomes more significant as problem size grows
+
+## Future Directions
+
+- Test on IBM Quantum (up to 127 qubits available)
+- Explore qubit-efficient encodings
+- Consider QAOA as near-term alternative
+- Implement quantum counting for solution enumeration
