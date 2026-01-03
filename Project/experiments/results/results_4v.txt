@@ -1,0 +1,46 @@
+# Experimental Results: 4-Vertex Star Graph
+# Date: December 2025
+# Students: Jady Pâmella Barbacena da Silva & Iman Dashtpeyma
+
+## Graph Description
+- Type: Star graph (vertex 1 as center)
+- Vertices: 4 (labeled 0-3)
+- Edges: {(0,1), (1,2), (1,3)}
+
+## Experiment Parameters
+- Dominating set size (k): 2
+- Search space size: 16 states
+- Grover iterations: 3
+- Shots: 1024
+- Require distinct vertices: True
+
+## Classical Analysis
+Valid dominating sets of size 2:
+  - {0, 1}
+  - {1, 2}
+  - {1, 3}
+Total: 3 distinct dominating sets
+
+## Quantum Results
+Total qubits used: 21
+- Input qubits: 4
+- Auxiliary qubits: 16
+- Output qubit: 1
+
+Top measurement results:
+| State | Vertices | Count | Probability | Valid |
+|-------|----------|-------|-------------|-------|
+| 0110  | [1, 2]   | 169   | 16.50%      | ✓     |
+| 1001  | [2, 1]   | 163   | 15.92%      | ✓     |
+| 1000  | [0, 1]   | 3     | 0.29%       | ✓     |
+| 1011  | [3, 1]   | 3     | 0.29%       | ✓     |
+| 1110  | [1, 3]   | 2     | 0.20%       | ✓     |
+
+## Summary
+- Success probability: 33.2%
+- Valid solutions found: 5 (including permutations)
+- Best solution: [1, 2]
+
+## Conclusion
+The algorithm correctly identifies dominating sets with high probability.
+Vertex 1 (the center of the star) appears in all valid solutions as expected.

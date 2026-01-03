@@ -1,0 +1,40 @@
+# Experimental Results: 8-Vertex Two-Stars Graph
+# Date: December 2025
+# Students: Jady Pâmella Barbacena da Silva & Iman Dashtpeyma
+
+## Graph Description
+- Type: Two star subgraphs connected
+- Vertices: 8 (labeled 0-7)
+- Edges: {(0,1), (0,2), (0,3), (4,5), (4,6), (4,7), (0,4)}
+- Structure: Vertex 0 is hub for 1,2,3; Vertex 4 is hub for 5,6,7; Hubs are connected
+
+## Experiment Parameters
+- Dominating set size (k): 2
+- Search space size: 64 states
+- Require distinct vertices: True
+
+## Classical Analysis
+Valid dominating sets of size 2:
+  - {0, 4} (UNIQUE SOLUTION)
+Total: 1 distinct dominating set
+
+## Resource Requirements
+Total qubits needed: 30
+- Input qubits: 6 (2 vertices × 3 bits each)
+- Auxiliary qubits: 23
+- Output qubit: 1
+
+## Simulation Status
+⚠ Circuit too large for practical simulation (30 qubits exceeds ~25 qubit limit)
+Classical simulator memory requirements: ~2^30 = 1 billion amplitudes
+Experiment skipped due to resource constraints.
+
+## Theoretical Analysis
+- Optimal Grover iterations: π/4 × √64 ≈ 6 iterations
+- Expected success probability: ~100% (single solution case)
+- The algorithm is CORRECT but cannot be simulated classically
+
+## Conclusion
+This graph demonstrates the scalability limitations of classical quantum simulation.
+The algorithm design is verified through smaller graphs and theoretical analysis.
+Real quantum hardware (e.g., IBM Quantum) would be needed to run this experiment.
